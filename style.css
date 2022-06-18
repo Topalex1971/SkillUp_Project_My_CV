@@ -1,0 +1,20 @@
+.center{
+    text-align: center;
+    }
+.container{
+    display: flex;
+    display: inline-row; 
+        }
+.content{
+    flex-grow: 2;
+    }
+button {
+    background-color:  rgb(84, 101, 172);;
+    border-radius: 5px;
+}
+.foto{
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px;
+    width: 100px;
+    height: 120px;
+}
