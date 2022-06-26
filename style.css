@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Anek Malayalam', sans-serif;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(240,241,244,0.98) 99%);
+}
+main{
+    margin-top: 6rem;
+}
+.foto{
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.title_color{
+    color:rgb(84, 101, 172);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(84, 101, 172);
+    top: 0;
+    text-align: center;
+    /*padding: 0.1rem;*/
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0.1rem;
+}
+/* Dropdown menu*/
+.dropdown {
+    float: right;
+    overflow: auto;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn{
+    text-transform: uppercase;
+    font-weight: 780;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    color: white;
+    /*padding: 0.1rem 0.1rem;*/
+    background-color: rgb(84, 101, 172);
+    /*font-family: inherit; Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(145, 162, 229); /*rgb(145, 162, 229);*/
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-weight: 200;
+    background-color: rgb(145, 162, 229);
+    width: 12.5rem;
+    border-radius: 0.5rem;
+    /*box-shadow: 0px 8px 16px 0px  rgba(0,0,0,0.2);*/
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(193, 217, 249);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.decor{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1,h2{
+    color: rgb(84, 101, 172);
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+
+}
+.contact{
+    margin-right: 2rem;
+}
+.location{
+    margin-left: 2rem;
+}
+
+.network{
+    display: flex;
+    flex-direction: row;
+}
+.linked, .gh {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.container-sum-obj{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+}
+
+.sum_obj{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    margin: 2rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;
+}
+.pand{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+table{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+tr{
+    background-color: rgb(84, 101, 172);
+    color: rgb(255, 255, 255);
+}
+
+
+
+.lang{
+margin-left: 2rem;
+margin-right: 2rem;
+
+}
+
+button{
+    background-color:  rgb(84, 101, 172);
+    border-radius: 5px;
+    padding: 0.7rem;
+    border:0;
+    color:rgb(255, 255, 255);
+}
+#skills-block,
+#edu-block,
+#work-block{
+    padding-top: 3rem;
+}
+
+.border_edu{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;
+    padding: 0 0 1rem 0;
+    margin: 2rem 1rem 0 1rem;
+}
+
+.text_edu{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.dop_edu{
+    padding: 1rem;
+}
+.soft_skills{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;
+    padding: 0.5rem 3rem 0 3rem;
+    margin: 2rem 1rem 0 1rem;
+}
+.prof_skills{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;    
+    margin: 2rem 1rem 2rem 1rem;
+    padding: 0 3rem 0 3rem;
+}
+.work_utest{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;    
+    margin: 2rem 1rem 0 1rem;
+    padding: 4rem 3rem 1rem 3rem;
+
+}
+.work_programing{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;    
+    margin: 2rem 1rem 0 1rem;
+    padding: 4rem 3rem 1rem 3rem;
+}
+.work_manage{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;    
+    margin: 2rem 1rem 0 1rem;
+    padding: 4rem 3rem 1rem 3rem;
+}
+.border_languges{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;    
+    margin: 2rem 1rem 0 1rem;
+    padding: 0 2rem 0 2rem;
+}
+.container_languges{
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.responsable{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;    
+    margin: 2rem 15rem 0 15rem;
+    padding: 2rem;
+}
+
+.border_asses{
+    border: 3px solid rgb(84, 101, 172);
+    box-sizing: content-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
+    border-radius: 2rem;    
+    margin: 2rem 15rem 0 15rem;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.form-item input,
+.form-item textarea{
+    width: 300px;
+}
+.form-item textarea{
+    height: 150px;
+    resize: none;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(84, 101, 172);
+    bottom: 0;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    margin-left: auto;
+    margin-right: auto;
+}
