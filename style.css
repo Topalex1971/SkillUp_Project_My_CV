@@ -11,8 +11,7 @@ main{
 .foto{
     border-radius: 20px 20px 20px 20px;
     padding: 10px;
-    width: 100px;
-    height: auto;
+
 }
 
 .title_color{
@@ -117,19 +116,40 @@ h1,h2{
 
 }
 .contact{
-    margin-right: 2rem;
+    margin: 1rem 2rem 0 0;
 }
 .location{
-    margin-left: 2rem;
+    margin: 1rem 2rem 0 0;
+}
+.network{
+    margin: 1rem 2rem 0 0;
+}
+.contact p{
+    margin: 0;
+}
+.location p{
+    margin: 0;
 }
 
-.network{
+
+.network_path{
     display: flex;
     flex-direction: row;
+    margin: 0;
+    justify-content: center;
+}
+.network_path p{
+    margin: 0;
+}
+.network_path img{
+    margin: 0;
+    width: 1.5rem;
+    padding: 0;
 }
 .linked, .gh {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    margin: 0;
 }
 
 .container-sum-obj{
@@ -279,7 +299,7 @@ button{
     box-sizing: content-box;
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
     border-radius: 2rem;    
-    margin: 2rem 15rem 0 15rem;
+    margin: 0.5rem 15rem 0 15rem;
     padding: 0.5rem 0 1rem 0;
 }
 
