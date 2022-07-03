@@ -8,11 +8,19 @@ body{
 main{
     margin-top: 6rem;
 }
-.foto{
+#foto{
     border-radius: 20px 20px 20px 20px;
-    padding: 10px;
+    padding: 0.5rem;
+    width: 25vw;
+    height: 20vh;
 
 }
+/*.foto1{
+    border-radius: 20px 20px 20px 20px;
+    padding: 0.5rem;
+    width: 30vw;
+    height: 20vh;
+}*/
 
 .title_color{
     color:rgb(84, 101, 172);
@@ -30,8 +38,8 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 200 solid;
+    font-size: 0.2rem;
     padding: 0 1rem 0 1rem;
 }
 
@@ -49,8 +57,8 @@ ul li{
   /* Dropdown button */
   .dropdown .dropbtn{
     text-transform: uppercase;
-    font-weight: 780;
-    font-size: 0.9rem;
+    font-weight: 200;
+    font-size: 0.2rem;
     border: none;
     outline: none;
     color: white;
@@ -71,7 +79,7 @@ ul li{
     position: absolute;
     font-weight: 200;
     background-color: rgb(145, 162, 229);
-    width: 12.5rem;
+    width: 8rem;
     border-radius: 0.5rem;
     /*box-shadow: 0px 8px 16px 0px  rgba(0,0,0,0.2);*/
     z-index: 1;
@@ -107,10 +115,21 @@ h1,h2{
     color: rgb(84, 101, 172);
     text-align: center;
 }
+    /* Button change foto*/
+#btn{
+    background-color: rgb(84, 101, 172);
 
+    }
+
+#btn:hover{
+    background-color:rgb(193, 217, 249);
+    color: black;
+    transition: all 0.275s ease-in;
+}
+    /* CONTACTS*/    
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 100%;
     justify-content: center;
 
@@ -135,16 +154,17 @@ h1,h2{
 .network_path{
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: 0 0 1.5rem 0;
     justify-content: center;
 }
 .network_path p{
     margin: 0;
 }
 .network_path img{
-    margin: 0;
-    width: 1.5rem;
-    padding: 0;
+        margin: 0;
+        width: 6vw;
+        height: 4vh;
+        padding: 0;
 }
 .linked, .gh {
     padding-left: 0.5rem;
@@ -154,29 +174,35 @@ h1,h2{
 
 .container-sum-obj{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     justify-content: center;
 }
 
 .sum_obj{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
     border: 3px solid rgb(84, 101, 172);
     box-sizing: content-box;
-    margin: 2rem;
+    margin: 1rem;
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
     border-radius: 2rem;
 }
 .pand{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.table-responsive {
+	overflow-x: auto;
 }
 
 table{
@@ -193,10 +219,9 @@ tr{
 
 
 
-.lang{
-margin-left: 2rem;
-margin-right: 2rem;
-
+.container_languges h5{
+margin-left: 1rem;
+margin-right: 1rem;
 }
 
 button{
@@ -270,28 +295,41 @@ button{
     padding: 4rem 3rem 1rem 3rem;
 }
 .border_languges{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     border: 3px solid rgb(84, 101, 172);
     box-sizing: content-box;
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
-    border-radius: 2rem;    
+    border-radius: 2rem;   
     margin: 2rem 1rem 0 1rem;
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 0 1rem 0;
+
+
 }
 .container_languges{
     display: flex;
-    flex-direction: row;
-    max-width: 60%;
+    flex-direction: column;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    /*padding-left: auto;
+    padding-right: auto;*/
+}
 
+.container_languges h4{
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0.2rem 0 0.2rem 0;
 }
 .responsable{
     border: 3px solid rgb(84, 101, 172);
     box-sizing: content-box;
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
     border-radius: 2rem;    
-    margin: 2rem 15rem 0 15rem;
-    padding: 2rem;
+    margin: 2rem 1rem 2rem 1rem;
+    padding: 1rem;
 }
 
 .border_asses{
@@ -299,17 +337,17 @@ button{
     box-sizing: content-box;
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(84, 101, 172);
     border-radius: 2rem;    
-    margin: 0.5rem 15rem 0 15rem;
+    margin: 2rem 1rem 1rem 1rem;
     padding: 0.5rem 0 1rem 0;
 }
 
 .form-item input,
 .form-item textarea{
-    width: 300px;
+    width: 65vw;
 }
 .form-item textarea{
-    height: 150px;
-    resize: none;
+    height: 10vh;
+    /*resize: inherit;*/
 }
 
 footer {
@@ -329,4 +367,274 @@ footer a {
 footer ul {
     margin-left: auto;
     margin-right: auto;
+}
+@media (min-width: 576px) {
+    #foto{
+        width: 20vw;
+        height: 20vh;
+    }
+    .foto1{
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .network_path img{
+        margin: 0;
+        width: 5.5vw;
+        height: 3.5vh;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: center;
+    
+    }
+
+    .container-sum-obj{
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 1rem 0;
+        margin: 1rem 0.1rem 0 0.1rem;
+        justify-content: center;
+    }
+
+    .container_languges{
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem 1rem 1rem;
+    }  
+    
+    .container_languges h5{
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+
+
+    .responsable{
+        margin: 2rem 1rem 1rem 1rem;
+        padding: 2rem;
+    }
+    .border_asses{
+        margin: 2rem 1rem 1rem 1rem;
+        padding: 0.5rem 0 1rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #foto{
+        width: 20vw;
+        height: 20vh;
+    
+    }
+    .foto1{
+        width: 25vw;
+        height: 20vh;
+    }
+    nav a{
+    font-weight: 500 solid;
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+}
+
+    .dropdown .dropbtn{
+        font-weight: 280;
+        font-size: 1.2rem;
+    }
+    .dropdown-content {
+        font-weight: 400;
+        width: 15rem;
+    }
+    .network_path img{
+        margin: 0;
+        width: 4vw;
+        height: 3vh;
+        padding: 0;
+    }
+    .container_languges{
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .responsable{
+        margin: 2rem 10rem 2rem 10rem;
+        padding: 2rem;
+    }
+    .border_asses{
+        margin: 2rem 10rem 2rem 10rem;
+        padding: 0.5rem 0 1rem 0;
+    }
+
+    .form-item input,
+    .form-item textarea{
+        width: 45vw;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    #foto{
+        width: 12vw;
+        height: 20vh;
+    
+    }
+    .foto1{
+        width: 15vw;
+        height: 20vh;
+    }
+    
+    nav a{
+    font-weight: 500 solid;
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+}
+
+    .dropdown .dropbtn{
+        font-weight: 280;
+        font-size: 1.2rem;
+    }
+    .dropdown-content {
+        font-weight: 400;
+        font-size: 10rem;
+        width: 15rem;
+    }
+        .network_path img{
+        margin: 0;
+        width: 3vw;
+        height: 4vh;
+        padding: 0;
+    }
+    .container_languges{
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .responsable{
+        margin: 2rem 18rem 2rem 18rem;
+        padding: 2rem;
+    }
+    .border_asses{
+        margin: 2rem 18rem 2rem 18rem;
+        padding: 0.5rem 0 1rem 0;
+    }
+    .form-item input,
+    .form-item textarea{
+        width: 35vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+        
+    #foto{
+        width: 7.5vw;
+        height: 20vh;
+    
+    }
+    .foto1{
+        width: 9vw;
+        height: 20vh;
+    }
+
+    nav a{
+    font-weight: 300 solid;
+    font-size: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+    .dropdown .dropbtn{
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    .dropdown-content {
+        font-weight: 400;
+        width: 12rem;
+    }
+
+    .network_path img{
+        margin: 0;
+        width: 3vw;
+        height: 2vh;
+        padding: 0;
+    }
+    
+    .container_languges{
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .responsable{
+        margin: 2rem 25rem 2rem 25rem;
+        padding: 2rem;
+    }
+    .border_asses{
+        margin: 2rem 25rem 2rem 25rem;
+        padding: 0.5rem 0 1rem 0;
+    }
+    .form-item input,
+    .form-item textarea{
+        width: 25vw;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    
+    #foto{
+        width: 7.5vw;
+        height: 20vh;
+    
+    }
+    .foto1{
+        width: 9vw;
+        height: 20vh;
+    }
+    
+    nav a{
+    font-weight: 300 solid;
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+}
+
+    .dropdown .dropbtn{
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    .dropdown-content {
+        font-weight: 300;
+        width: 13.7rem;
+    }
+
+        .network_path img{
+        margin: 0;
+        width: 2vw;
+        height: 4vh;
+        padding: 0;
+    }
+    
+    .container_languges{
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem 1rem 1rem;
+    }
+    
+    .responsable{
+        margin: 2rem 25rem 2rem 25rem;
+        padding: 2rem;
+    }
+
+    .border_asses{
+        margin: 2rem 25rem 2rem 25rem;
+        padding: 0.5rem 0 1rem 0;
+    }
+    .form-item input,
+    .form-item textarea{
+        width: 25vw;
+    }
+
+
 }
