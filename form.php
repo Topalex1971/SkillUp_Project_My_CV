@@ -1,6 +1,6 @@
 <?php
 // ---- This is 1-st version -----
-if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
+/*if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 
 	//mysql credentials
 	$mysql_host = "alextop.mysql.tools";
@@ -26,27 +26,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
     
     /*if (empty($u_value)){
 		die("Please enter value range CV");
-	}*/
+	}*/	
 
 	//Open a new connection to the MySQL server
 	//see https://www.sanwebe.com/2013/03/basic-php-mysqli-usage for more info
-	$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
+	/*$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
 	
 	//Output any connection error
 	if ($mysqli->connect_error) {
 		die('Error : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
 	}	
 	
-	$statement = $mysqli->prepare("INSERT INTO users_data (user_name, user_email, user_message) VALUES(?, ?, ?)"); //prepare sql insert query
+	$statement = $mysqli->prepare("INSERT INTO users_data (user_name, email, user_message) VALUES(?, ?, ?)"); //prepare sql insert query
 	//bind parameters for markers, where (s = string, i = integer, d = double,  b = blob)
 	$statement->bind_param('sss', $u_name, $u_email, $u_text); //bind values and execute insert query
-	//var_dump($statement)
+	var_dump($statement)
 	if($statement->execute()){
 		print "Hello " . $u_name . "!, your message has been saved!";
 	}else{
 		print $mysqli->error; //show mysql error if any
 	}
-}
+}*/
 
 /*if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is coming from a form
 	$u_name = $_POST["user_name"]; //set PHP variables like this so we can use them anywhere in code below
@@ -81,18 +81,19 @@ throw new \PDOException($e->getMessage(), (int)$e->getCode());
 
 //Отримуємо дані з форми: user_name, email, assess_text, assess_value
 //Отримуємо дані через суперглобальний масив $_POST
-//if ($_POST['user_name'] && $_POST['email'] && $_POST['assess_text']&& $_POST['assess_value']) {
-if ($_POST['user_name'] && $_POST['email'] && $_POST['assess_text']) {
+if ($_POST['user_name'] && $_POST['email'] && $_POST['assess_text']&& $_POST['assess_value']) {
 $data = [
 'user_name' => $_POST['user_name'],
 'email' => $_POST['email'],
 'assess_text' => $_POST['assess_text'],
-//'assess_value' => $_POST['assess_value'],
+'assess_value' => $_POST['assess_value'],
 ];
 //через PDO, (або можна через mysqli ...), записуємо в БД
-//$sql = "INSERT INTO users (name, email) VALUES (:name, :email)";
-//$stmt= $pdo->prepare($sql);
-//$stmt->execute($data);
+$sql = "INSERT INTO USERS (user_name, email) VALUES (:user_name, :email)";
+$sql = "INSERT INTO assessment (text_assessment, assess_value) VALUES (:text_assessment, :assess_value)";
+
+$stmt= $pdo->prepare($sql);
+$stmt->execute($data);
 }
 
 
