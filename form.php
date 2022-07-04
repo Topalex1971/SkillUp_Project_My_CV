@@ -1,6 +1,6 @@
 <?php
 // ---- This is 1-st version -----
-if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
+/*if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 
 	//mysql credentials
 	$mysql_host = "alextop.mysql.tools";
@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 	$u_name = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING); //set PHP variables like this so we can use them anywhere in code below
 	$u_email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
 	$u_text = filter_var($_POST["assess_text"], FILTER_SANITIZE_STRING);
-    $u_value = filter_var($_POST["assess_value"], FILTER_SANITIZE_STRING);
+    //$u_value = filter_var($_POST["assess_value"], FILTER_SANITIZE_STRING);
 
 	if (empty($u_name)){
 		die("Please enter your name");
@@ -24,9 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 		die("Please enter text");
 	}	
     
-    if (empty($u_value)){
-		die("Please enter text");
-	}	
+    /*if (empty($u_value)){
+		die("Please enter value range CV");
+	}
 
 	//Open a new connection to the MySQL server
 	//see https://www.sanwebe.com/2013/03/basic-php-mysqli-usage for more info
@@ -39,14 +39,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 	
 	$statement = $mysqli->prepare("INSERT INTO users_data (user_name, user_email, user_message) VALUES(?, ?, ?)"); //prepare sql insert query
 	//bind parameters for markers, where (s = string, i = integer, d = double,  b = blob)
-	$statement->bind_param('sss', $u_name, $u_email, $u_text, $u_value); //bind values and execute insert query
-	
+	$statement->bind_param('sss', $u_name, $u_email, $u_text); //bind values and execute insert query
+	var_dump($statement)
 	if($statement->execute()){
 		print "Hello " . $u_name . "!, your message has been saved!";
 	}else{
 		print $mysqli->error; //show mysql error if any
 	}
-}
+}*/
 
 /*if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is coming from a form
 	$u_name = $_POST["user_name"]; //set PHP variables like this so we can use them anywhere in code below
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 // ---- This is 2 version -----
 
 //Підключаємлсь до бази даних (БД)
-/*$host = 'alextop.mysql.tools';
+$host = 'alextop.mysql.tools';
 $db = 'alextop_topalex';
 $user = 'alextop_topalex1971';
 $pass = 'TataSvetMoihOchey1971';
@@ -81,18 +81,19 @@ throw new \PDOException($e->getMessage(), (int)$e->getCode());
 
 //Отримуємо дані з форми: user_name, email, assess_text, assess_value
 //Отримуємо дані через суперглобальний масив $_POST
-if ($_POST['user_name'] && $_POST['email'] && $_POST['assess_text']&& $_POST['assess_value']) {
+//if ($_POST['user_name'] && $_POST['email'] && $_POST['assess_text']&& $_POST['assess_value']) {
+if ($_POST['user_name'] && $_POST['email'] && $_POST['assess_text']) {
 $data = [
 'user_name' => $_POST['user_name'],
 'email' => $_POST['email'],
 'assess_text' => $_POST['assess_text'],
-'assess_value' => $_POST['assess_value'],
+//'assess_value' => $_POST['assess_value'],
 ];
 //через PDO, (або можна через mysqli ...), записуємо в БД
 //$sql = "INSERT INTO users (name, email) VALUES (:name, :email)";
 //$stmt= $pdo->prepare($sql);
 //$stmt->execute($data);
-}*/
+}
 
 
 ?>
