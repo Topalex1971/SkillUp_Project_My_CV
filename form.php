@@ -1,39 +1,33 @@
 <?php
-// ---- This is 2 version -----
 
-//Підключаємлсь до бази даних (БД)
+/*$email = $_POST['email'] ?? null;
+$userName = $_POST['user_name'] ?? null;
+$assessText = $_POST['assess_text'] ?? null;*/
+
+// ---- Super worked !!! ----------
+$email = $_POST['email'];
+$userName = $_POST['user_name'];
+$assessText = $_POST['assess_text'];
+
+if (!$email || !$userName || !$assessText) {
+die('Invalid parameters');
+}
+
 $host = 'alextop.mysql.tools';
-$db = 'alextop_topalex';
-$user = 'alextop_topalex1971';
-$pass = 'TataSvetMoihOchey1971';
+$dbName = 'alextop_topalex';
+$dbUserName = 'alextop_topalex1971';
+$password = 'TataSvetMoihOchey1971';
 $charset = 'utf8mb4';
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$options = [
-PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-PDO::ATTR_EMULATE_PREPARES => false,
-];
-try {
-$pdo = new PDO($dsn, $user, $pass, $options);
-} catch (\PDOException $e) {
-throw new \PDOException($e->getMessage(), (int)$e->getCode());
-}
+$dataSourceName = "mysql:host={$host};dbname={$dbName};charset={$charset}";
+$pdo = new PDO($dataSourceName, $dbUserName, $password);
 
-//Отримуємо дані з форми: user_name, email, assess_text, assess_value
-//Отримуємо дані через суперглобальний масив $_POST
-if ($_POST['user_name'] && $_POST['email'] && $_POST['assess_text']) {
-$data = [
-'user_name' => $_POST['user_name'],
-'email' => $_POST['email'],
-'assess_text' => $_POST['assess_text'],
-//'assess_value' => $_POST['assess_value'],
-];
-//через PDO, (або можна через mysqli ...), записуємо в БД
-$sql = "INSERT INTO USERS (user_name, email) VALUES (:user_name, :email)";
-$stmt= $pdo->prepare($sql);
-$stmt->execute($data);
-$sql = "INSERT INTO assessment (text_assessment) VALUES (:text_assessment)";
-$stmt= $pdo->prepare($sql);
-$stmt->execute($data);
-}
+$dataUsers = ['email' => $email, 'user_name' => $userName];
+$sqlUsers = "INSERT INTO USERS (email, user_name) VALUES (:email, :user_name)";
+$statementUsers = $pdo->prepare($sqlUsers);
+$statementUsers->execute($dataUsers);
+
+$dataAssessment = ['text_assessment' => $assessText];
+$sqlAssessment = "INSERT INTO assessment (text_assessment) VALUES (:text_assessment)";
+$statementAssessment = $pdo->prepare($sqlAssessment);
+$statementAssessment->execute($dataAssessment);
