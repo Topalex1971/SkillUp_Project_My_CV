@@ -1,6 +1,6 @@
 <?php
 // ---- This is 1-st version -----
-/*if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
+if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 
 	//mysql credentials
 	$mysql_host = "alextop.mysql.tools";
@@ -46,7 +46,7 @@
 	}else{
 		print $mysqli->error; //show mysql error if any
 	}
-}*/
+}
 
 /*if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is coming from a form
 	$u_name = $_POST["user_name"]; //set PHP variables like this so we can use them anywhere in code below
