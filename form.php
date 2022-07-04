@@ -26,7 +26,7 @@
     
     /*if (empty($u_value)){
 		die("Please enter value range CV");
-	}
+	}*/
 
 	//Open a new connection to the MySQL server
 	//see https://www.sanwebe.com/2013/03/basic-php-mysqli-usage for more info
@@ -40,7 +40,7 @@
 	$statement = $mysqli->prepare("INSERT INTO users_data (user_name, user_email, user_message) VALUES(?, ?, ?)"); //prepare sql insert query
 	//bind parameters for markers, where (s = string, i = integer, d = double,  b = blob)
 	$statement->bind_param('sss', $u_name, $u_email, $u_text); //bind values and execute insert query
-	var_dump($statement)
+	//var_dump($statement)
 	if($statement->execute()){
 		print "Hello " . $u_name . "!, your message has been saved!";
 	}else{
