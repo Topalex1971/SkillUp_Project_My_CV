@@ -32,14 +32,18 @@
             </ul>
         </nav>
         <main>
-                    <h1>Oleksandr Topolnytskyi</h1>
-                    <h2>Looking for a position Manual QA Engineer</h2>
-                 
-                    <img id="foto" src="./Image/Photo_0.jpg" alt="Foto Topolnyskyi_0"><br>
-                    <!--img class="foto1" src="./Image/Foto_Alextop_220616_2_www.jpg" alt="Foto Topolnyskyi_1">
-                    <img class="foto" src="./Image/Foto_Alextop_220627_4_www.jpg" alt="Foto Topolnyskyi_2"!-->
-                    
-                    <button id="btn">Change photo</button> 
+            <div>
+                    <h1>Oleksandr Topolnytskyi</h1>                
+            </div>
+            <div>
+                    <h2>Looking for a position Manual QA Engineer</h2>              
+            </div>
+            <div>
+                    <img id="foto" src="./Image/Photo_0.jpg" alt="Foto Topolnyskyi_0"><br>                               
+            </div>
+            <div>
+                    <button id="btn">Change photo</button>                 
+            </div>
               
                     <div class="container">   
                      <div class="contact">
@@ -281,20 +285,31 @@
             </div>
 
             <div id="asses-block" class="border_asses">
-                    <form>
+                    <!--form action="index.php" method="POST"!-->
+                    <form>   
                         <h4 class="title_color">ASSESSMENT MY CV</h4>
                         <div class="form-item">
-                            <input type="text" placeholder="Enter you name, please">
+                            <input type="text" placeholder="Enter you name, please" name="user_name">
                         </div>
                         <div class="form-item">
-                            <input type="email" placeholder="Enter you email, please">
+                            <input type="email" placeholder="Enter you email, please" name="email">
                         </div>
                         <div class="form-item">
-                            <textarea placeholder="Enter you assessment for my CV"></textarea>
+                            <textarea placeholder="Enter you assessment for my CV" name="assess_text"></textarea>
                         </div>
+                        <div class="form-value">
+                            <div class="box">
+                                <div class="slider">
+                                    <input id="assess_slider" type="range" min="0" max="100" value="0" name="assess_value">
+                                </div>
+                                <div id="assess_value" class="value">100</div>
+                            </div>
+                            <p>Please enter a rating of CV on a 100-point scale</p>
+                        </div>                         
                         <div class="form-item">
-                            <button><span>Send your assessment</span></button>
-                        </div>   
+                            <button type="submit"><span>Send your assessment</span></button>
+                        </div>  
+
                     </form>                
             </div>            
 
