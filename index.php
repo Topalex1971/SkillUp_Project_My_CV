@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is coming from a form
+/*if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is coming from a form
 	$u_name = $_POST["user_name"]; //set PHP variables like this so we can use them anywhere in code below
 	$u_email = $_POST["email"];
 	$a_text = $_POST["assess_text"];
@@ -7,10 +7,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is coming from a form
 	//print output text
 	print "Hello " . $u_name . "!, we have received your message and email ". $u_email;
 	print "We will contact you very soon!: " a_text;
-}
+}*/
 
 //Підключаємлсь до бази даних (БД)
-/*$host = 'alextop.mysql.tools';
+$host = 'alextop.mysql.tools';
 $db = 'alextop_topalex';
 $user = 'alextop_topalex1971';
 $pass = 'TataSvetMoihOchey1971';
@@ -41,5 +41,5 @@ $data = [
 //$sql = "INSERT INTO users (name, email) VALUES (:name, :email)";
 //$stmt= $pdo->prepare($sql);
 //$stmt->execute($data);
-}*/
+}
 >
