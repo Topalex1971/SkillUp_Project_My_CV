@@ -88,6 +88,21 @@
                     </div>
 
                 </div>
+            
+            <div class="burger-menu">
+                <a href="#" class="burger-menu_button">
+                    <span class="burger-menu_lines"></span>
+                </a>
+                <nav class="burger-menu_nav">
+                    <a href="" class="burger-menu_link">HOME</a>
+                    <a href="#edu-block" class="burger-menu_link">EDUCATION</a>
+                    <a href="#skills-block" class="burger-menu_link">SKILLS</a>
+                    <a href="#weutest" class="burger-menu_link">WORK EXPERIENCE</a>
+                    <a href="#asses-block" class="burger-menu_link">ASSESSMENT</a>
+                </nav>
+                <div class="burger-menu_overlay"></div>
+            </div>
+
             <section id="edu-block">            
                 <div class="border_edu">
                     <div class="text_edu">
@@ -127,9 +142,9 @@
                                 <div><strong class="title_color">SkillUp</strong> | June 2022 -  till now | Course “QA Training”</div>                    
                             </div>                                             
                 </div>    
-             </section>      
+        </section>      
 
-            <section id="skills-block">
+        <section id="skills-block">
                 <div class="soft_skills">
                     <h4 class="title_color">SOFT SKILLS</h4>
                     <p>Teamwork | Time management | Communicable | Responsible | Have an eye for detail | Self-taught | Organized | Self - motivated | Punctual </p>
@@ -150,9 +165,9 @@
                     <p>| Utest | Jira | Confluence |  TestRail | MySQL | Chrome DevTools | Sublime | Visual Studio Code | IDE: IntelliJ Idea | Git/GitHub | 
                         OS: Windows, iOS | Coding practice Java and SQL of: <a href="www.codewars.com">www.codewars.com </a> </p>                           
                 </div>
-            </section>        
-
-            <div id="weutest" class="work_utest">                                       
+        </section>        
+        <section id="weutest"> 
+            <div  class="work_utest">                                       
                     <h4  class="title_color">WORK EXPERIENCE | UTEST | QA</h4>
                         <p>I got experience to doing Functional testing and User interface testing (UI): Ensure all page elements 
                             are consistent like buttons, links, images, text, and video across the most popular browsers/app. 
@@ -268,6 +283,7 @@
                                 <button onclick="testalextop" ><span>See result Bug report of oleksandr.top </span></button>
                     </div>                  
             </div>  
+        </section>
 
             <div class="border_languges">
                   <h4 class="title_color">LANGUGES</h4> 
@@ -283,35 +299,40 @@
                     and I understand that inaccuracy of this information may result in a rejection.</strong>
                     </article>                    
             </div>
-
-            <div id="asses-block" class="border_asses">
-                    <!--form action="index.php" method="POST"!-->
+        
+        <section id="asses-block">
+            <div class="border_asses">
+                    <!--form action="form.php" method="POST"!-->
                     <form>   
                         <h4 class="title_color">ASSESSMENT MY CV</h4>
                         <div class="form-item">
-                            <input type="text" placeholder="Enter you name, please" name="user_name">
+                            <input type="text" placeholder="*Enter you name, please" name="user_name">
                         </div>
                         <div class="form-item">
-                            <input type="email" placeholder="Enter you email, please" name="email">
+                            <input type="email" placeholder="*Enter you email, please" name="email">
                         </div>
                         <div class="form-item">
-                            <textarea placeholder="Enter you assessment for my CV" name="assess_text"></textarea>
+                            <textarea placeholder="*Enter you assessment for my CV" name="assess_text"></textarea>
                         </div>
                         <div class="form-value">
                             <div class="box">
                                 <div class="slider">
-                                    <input id="assess_slider" type="range" min="0" max="100" value="0" name="assess_value">
+                                    <input id="sliderId" type="range" min="0" max="100" value="50" name="assess_value">
                                 </div>
-                                <div id="assess_value" class="value">100</div>
+                                <div id="valueId" class="value">100</div>
                             </div>
                             <p>Please enter a rating of CV on a 100-point scale</p>
                         </div>                         
                         <div class="form-item">
-                            <button type="submit"><span>Send your assessment</span></button>
-                        </div>  
+                            <button id="btnMessage" type="submit"><span>Send your assessment</span></button>
+                        </div> 
+                        <div class="message">
+                            <p id="message_recrut"></p>
+                        </div> 
 
                     </form>                
             </div>            
+        </section>
 
             <footer>
                 <!--ul class="footer-pay">
