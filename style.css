@@ -11,16 +11,10 @@ main{
 #foto{
     border-radius: 20px 20px 20px 20px;
     padding: 0.5rem;
-    width: 25vw;
-    height: 20vh;
+    width: 48vw;
+    height: auto;
 
 }
-/*.foto1{
-    border-radius: 20px 20px 20px 20px;
-    padding: 0.5rem;
-    width: 30vw;
-    height: 20vh;
-}*/
 
 .title_color{
     color:rgb(84, 101, 172);
@@ -339,17 +333,100 @@ button{
     border-radius: 2rem;    
     margin: 2rem 1rem 1rem 1rem;
     padding: 0.5rem 0 1rem 0;
+
 }
 
+.form-value input{
+        width: 35vw;
+}
+    
 .form-item input,
 .form-item textarea{
-    width: 65vw;
+        width: 65vw;
+        border-style: double;
+        border-radius: 0.3rem;
+        margin: 0.6rem 0 0 0;
+        border-color: rgb(84, 101, 172);
+    }
+.form-item input{
+    height: 4vh;
 }
+    
 .form-item textarea{
-    height: 10vh;
-    /*resize: inherit;*/
+    height: 20vh;
+    }
+
+.form-value p{
+    margin: 0 0 2rem 0;
 }
 
+.slider input{
+    width: 25vw;
+}
+
+.form-value{
+    place-items: center;
+}
+
+/* ----- Slider for assessment ----- */
+.box{
+    display: flex;  
+    width: 100%;
+    margin: 1rem 0 0 2.2rem;
+    align-items: center;
+    
+}
+
+.form-value p{
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: rgb(84, 101, 172);
+    margin-top: 1rem;
+    
+}
+
+.slider input{
+    width: 60vw;
+}
+
+.value{
+    margin: 0 0 0 0.5rem;
+    color: rgb(84, 101, 172);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+/*.slider input::-webkit-slider-thumb{  
+    -webkit-slider-thumb: none;
+    appearance: none;
+    height: 20px;
+    background: white;
+}*/
+.slider input::before{  
+    content: "0";
+    color: rgb(84, 101, 172);
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+
+}
+/*------Message assessment----*/
+.message p{
+    color: rgb(74, 236, 107);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.message{
+    margin: 2rem 0 2rem 0;
+}
+
+#btnMessage:hover{
+    background-color:rgb(193, 217, 249);
+    color: black;
+    transition: all 0.275s ease-in;
+}
 footer {
     display: flex;
     background-color: rgb(84, 101, 172);
@@ -370,13 +447,10 @@ footer ul {
 }
 @media (min-width: 576px) {
     #foto{
-        width: 20vw;
-        height: 20vh;
+        width: 40vw;
+        height: auto;
     }
-    .foto1{
-        width: 20vw;
-        height: 20vh;
-    }
+
 
     .network_path img{
         margin: 0;
@@ -420,18 +494,93 @@ footer ul {
         margin: 2rem 1rem 1rem 1rem;
         padding: 0.5rem 0 1rem 0;
     }
+    /* ----- Slider for assessment ----- */
+    .box{
+        display: flex;  
+        width: 100%;
+        margin: 1rem 0 0 3rem;
+        align-items: center;
+        
+    }
+    
+        .form-value input{
+        width: 35vw;
+    }
+    
+    .form-item input,
+    .form-item textarea{
+        width: 35vw;
+        border-style: double;
+        border-radius: 0.3rem;
+        margin: 0.6rem 0 0 0;
+        border-color: rgb(84, 101, 172);
+    }
+    .form-item input{
+        height: 4vh;
+    }
+    
+    .form-item textarea{
+        height: 20vh;
+    }
+    
+    .form-value p{
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgb(84, 101, 172);
+        
+    }
+  
+    .slider input{
+        width: 58vw;
+    }
+ 
+    .value{
+        margin: 0 0 0 0.5rem;
+        color: rgb(84, 101, 172);
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    /*.slider input::-webkit-slider-thumb{  
+        -webkit-slider-thumb: none;
+        appearance: none;
+        height: 20px;
+        background: white;
+    }*/
+    .slider input::before{  
+        content: "0";
+        color: rgb(84, 101, 172);
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+
+    }
+    /*------Message assessment----*/
+    .message p{
+        color: rgb(74, 236, 107);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+    .message{
+        margin: 2rem 0 2rem 0;
+    }
+
+    #btnMessage:hover{
+        background-color:rgb(193, 217, 249);
+        color: black;
+        transition: all 0.275s ease-in;
+    }
 }
 
 @media (min-width: 768px) {
     #foto{
-        width: 20vw;
-        height: 20vh;
+        width: 45vw;
+        height: auto;
     
     }
-    .foto1{
-        width: 25vw;
-        height: 20vh;
-    }
+
     nav a{
     font-weight: 500 solid;
     font-size: 1.2rem;
@@ -467,9 +616,82 @@ footer ul {
         padding: 0.5rem 0 1rem 0;
     }
 
+    .form-value input{
+        width: 45vw;
+    }
+    
     .form-item input,
     .form-item textarea{
         width: 45vw;
+        border-style: double;
+        border-radius: 0.3rem;
+        margin: 0.6rem 0 0 0;
+        border-color: rgb(84, 101, 172);
+    }
+    .form-item input{
+        height: 4vh;
+    }
+    
+    .form-item textarea{
+        height: 20vh;
+    }
+
+    /* ----- Slider for assessment ----- */
+    .box{
+        display: flex;  
+        width: 100%;
+        margin: 1rem 0 0 3rem;
+        align-items: center;
+        
+    }
+    .form-value p{
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgb(84, 101, 172);
+        
+    }
+  
+    .slider input{
+        width: 42vw;
+    }
+ 
+    .value{
+        margin: 0 0 0 0.5rem;
+        color: rgb(84, 101, 172);
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    /*.slider input::-webkit-slider-thumb{  
+        -webkit-slider-thumb: none;
+        appearance: none;
+        height: 20px;
+        background: white;
+    }*/
+    .slider input::before{  
+        content: "0";
+        color: rgb(84, 101, 172);
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+
+    }
+    /*------Message assessment----*/
+    .message p{
+        color: rgb(74, 236, 107);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+    .message{
+        margin: 2rem 0 2rem 0;
+    }
+
+    #btnMessage:hover{
+        background-color:rgb(193, 217, 249);
+        color: black;
+        transition: all 0.275s ease-in;
     }
 
 }
@@ -477,15 +699,11 @@ footer ul {
 @media (min-width: 992px) {
 
     #foto{
-        width: 12vw;
-        height: 20vh;
+        width:20vw;
+        height: auto;
     
     }
-    .foto1{
-        width: 15vw;
-        height: 20vh;
-    }
-    
+
     nav a{
     font-weight: 500 solid;
     font-size: 1.2rem;
@@ -521,23 +739,94 @@ footer ul {
         margin: 2rem 18rem 2rem 18rem;
         padding: 0.5rem 0 1rem 0;
     }
+
+    .form-value input{
+        width: 35vw;
+    }
+    
     .form-item input,
     .form-item textarea{
         width: 35vw;
+        border-style: double;
+        border-radius: 0.3rem;
+        margin: 0.6rem 0 0 0;
+        border-color: rgb(84, 101, 172);
     }
+    .form-item input{
+        height: 4vh;
+    }
+    
+    .form-item textarea{
+        height: 20vh;
+    }
+
+/* ----- Slider for assessment ----- */
+.box{
+    display: flex;  
+    width: 100%;
+    margin: 1rem 0 0 2rem;
+    align-items: center;
+    
+}
+
+.form-value p{
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(84, 101, 172);
+    
+}
+
+.slider input{
+    width: 32vw;
+}
+
+.value{
+    margin: 0 0 0 0.5rem;
+    color: rgb(84, 101, 172);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+/*.slider input::-webkit-slider-thumb{  
+    -webkit-slider-thumb: none;
+    appearance: none;
+    height: 20px;
+    background: white;
+}*/
+.slider input::before{  
+    content: "0";
+    color: rgb(84, 101, 172);
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+
+}
+/*------Message assessment----*/
+.message p{
+    color: rgb(74, 236, 107);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.message{
+    margin: 2rem 0 2rem 0;
+}
+
+#btnMessage:hover{
+    background-color:rgb(193, 217, 249);
+    color: black;
+    transition: all 0.275s ease-in;
+}
 
 }
 
 @media (min-width: 1200px) {
         
     #foto{
-        width: 7.5vw;
-        height: 20vh;
+        width: 15vw;
+        height: auto;
     
-    }
-    .foto1{
-        width: 9vw;
-        height: 20vh;
     }
 
     nav a{
@@ -545,6 +834,101 @@ footer ul {
     font-size: 1rem;
     padding: 0 1rem 0 1rem;
 }
+/*----Burger menu ------*/
+    .burger-menu_button{
+        position: fixed;
+        top: 1rem;
+        left: 2rem;
+        z-index: 30;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        background-color:white;
+    }
+    .burger-menu_button:hover, .burger-menu_lines{
+        filter:brightness(0.7)
+    }
+    .burger-menu_lines,
+    .burger-menu_lines::after,
+    .burger-menu_lines::before{
+        position: absolute;
+        height: 0.2rem;
+        width: 1.2rem;
+        background-color:rgb(84, 101, 172);
+        /* white;*/
+    }
+    .burger-menu_lines{
+        top: 50%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+
+    }
+     .burger-menu_lines::before{
+        content: '';
+        top: 0.4rem;
+
+    }   
+    .burger-menu_lines::after{
+        content: '';
+        top: -0.4rem;
+    }
+    .burger-menu_active .burger-menu_lines{
+        background-color: transparent;
+    }
+    .burger-menu_active .burger-menu_lines::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .burger-menu_active .burger-menu_lines::after{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .burger-menu_nav{
+        padding-top: 6rem;
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        width: 12rem;
+        background-color: rgb(84, 101, 172);
+        overflow-y: auto;
+        left: -100%;
+    }
+    .burger-menu_active .burger-menu_nav{
+        left: 0;
+    }
+    .burger-menu_link{
+        padding: 2rem 0 0 1rem;
+        width: 10rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+        color: white;
+        border-color: white;
+
+    }
+    .burger-menu_link:hover{
+        filter: brightness(0.7);
+    }
+
+    .burger-menu_overlay{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+
+    }
+    .burger-menu_active .burger-menu_overlay{
+        display: block;
+        /*background-color: rgb(0,0,0,0.5);*/
+    }
+    /*------ Top menu WORK EXPERIENCE dropdown-----*/
 
     .dropdown .dropbtn{
         font-weight: 300;
@@ -578,22 +962,112 @@ footer ul {
     .form-item input,
     .form-item textarea{
         width: 25vw;
+        border-style: double;
+        border-radius: 0.3rem;
+        margin: 0.6rem 0 0 0;
+        border-color: rgb(84, 101, 172);
+    }
+    .form-item input{
+        height: 4vh;
+    }
+    
+    .form-item textarea{
+        height: 20vh;
+    }
+/* ----- Slider for assessment ----- */
+    .box{
+        display: flex;  
+        width: 100%;
+        margin: 1rem 0 0 3rem;
+        align-items: center;
+        
     }
 
+    .form-value p{
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgb(84, 101, 172);
+        
+    }
+  
+    .slider input{
+        width: 23vw;
+        /*-webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;*/
+    }
+
+    .slider input::-webkit-slider-runnable-track{
+        appearance: none;
+        height: 0.7rem;
+        background: rgb(145, 162, 229);
+        border-radius: 0.3rem;
+    }
+
+    /*.slider input::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        appearance: none;
+        background: cyan;
+        color: #ecf0f1;
+        border: 1px solid cyan;
+        border-radius: 50%;
+        height: 20rem;
+        width:20rem;
+        margin-top: -0.2rem;
+     
+        //background: rgb(84, 101, 172);
+        //border-radius: 50%;
+    }*/
+
+     /*.slider input::-webkit-slider-thumb{  
+        -webkit-slider-thumb: none;
+        appearance: none;
+        height: 20px;
+        background: white;
+    }*/
+    .value{
+        margin: 0 0 0 0.5rem;
+        color: rgb(84, 101, 172);
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .slider input::before{  
+        content: "0";
+        color: rgb(84, 101, 172);
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+
+    }
+    /*------Message assessment----*/
+    .message p{
+        color: rgb(74, 236, 107);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+    .message{
+        margin: 2rem 0 2rem 0;
+    }
+
+    #btnMessage:hover{
+        background-color:rgb(193, 217, 249);
+        color: black;
+        transition: all 0.275s ease-in;
+    }
 }
 
 @media (min-width: 1400px) {
     
     #foto{
-        width: 7.5vw;
-        height: 20vh;
+        width: 15vw;
+        height: auto;
     
     }
-    .foto1{
-        width: 9vw;
-        height: 20vh;
-    }
-    
+
     nav a{
     font-weight: 300 solid;
     font-size: 1.2rem;
@@ -634,7 +1108,74 @@ footer ul {
     .form-item input,
     .form-item textarea{
         width: 25vw;
+        border-radius: 0.3rem;
+        margin: 0.6rem 0 0 0;
+        border-color: rgb(84, 101, 172);
+        border-width: 0.15rem;
+
     }
 
+    /* ----- Slider for assessment ----- */
+    .box{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 0 0 9.8rem;
+        align-items: center;
+        
+    }
+    
+    .form-value{
+        place-items: center;
+    }
 
+    .form-value p{
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgb(84, 101, 172);
+        
+    }
+  
+    .slider input{
+        width: 23vw;
+    }
+ 
+    .value{
+        margin: 0 0 0 0.5rem;
+        color: rgb(84, 101, 172);
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    /*.slider input::-webkit-slider-thumb{  
+        -webkit-slider-thumb: none;
+        appearance: none;
+        height: 20px;
+        background: white;
+    }*/
+    .slider input::before{  
+        content: "0";
+        color: rgb(84, 101, 172);
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+
+    }
+    /*------Message assessment----*/
+    .message p{
+        color: rgb(74, 236, 107);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+    .message{
+        margin: 2rem 0 2rem 0;
+    }
+
+    #btnMessage:hover{
+        background-color:rgb(193, 217, 249);
+        color: black;
+        transition: all 0.275s ease-in;
+    }
 }
