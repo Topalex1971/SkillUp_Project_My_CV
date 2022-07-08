@@ -31,11 +31,11 @@ function openbox3(box3) {
     }
     
     // ---- CHange Photo - 3 times -----------
-     const button = document.getElementById('btn');
+    const button = document.getElementById('btn');
     var el = document.getElementById('foto');     
     button.addEventListener('click', setAtribut);           
     function setAtribut(){
-        console.log("click");
+        //console.log("click");
 
             if (el.getAttribute("src") == "./Image/Photo_0.jpg"){
                 el.setAttribute("src", "./Image/Photo_1.jpg"); 
@@ -51,9 +51,52 @@ function openbox3(box3) {
             }
     }
 
-    //console.log("value = "+ el.getAttribute); 
-    /*function changeImage() {
-        var el = document.querySelector("img");
-        var at1 = el.setAttribute("src", "./Image/Foto_Alextop_220627_4_www.jpg");
-        Console.log(at1, at2)
-    }*/
+    /* ----- Slider for assessment ----- */
+   const sliderObj = document.getElementById("sliderId");
+    const output = document.getElementById("valueId");
+    console.log ("slider" + sliderObj+ "; value " + output );
+
+    output.innerHTML = sliderObj.value;
+
+    //console.log ("value.textContent" + value.textContent);
+    sliderObj.oninput = function() {
+        output.innerHTML = this.value;
+    }
+    console.log ("slider.oninput" + oninput);
+
+    //-------Send message recruiter -----
+    
+    const buttonMesage = document.getElementById('btnMessage');
+    buttonMesage.addEventListener('click', sendMessage);
+    function sendMessage(){
+        document.getElementById("message_recrut").
+        innerHTML = "Thanks for your assessment my CV";
+    }
+
+    // ---- Burger menu ----
+    function burgerMenu(selector) {
+        let menu = $(selector);
+        let button = menu.find('.burger-menu_button');
+        let links = menu.find('.burger-menu_link');
+        let overlay = menu.find('.burger-menu_overlay');
+
+    button.on('click', (e) => {
+        e.preventDefault();
+        toggleMenu();
+    });
+
+    link.on('click', () => toggleMenu());
+    overlay.on('click', () => toggleMenu());
+
+        function toggleMenu() {
+            menu.toggleClass('burger-menu_active');
+
+            if(menu.hasClass('burger-menu_active')){
+                $('body').css('overflow', 'hidden');
+            } else{
+                $('body').css('overflow', 'visible');
+            }
+        }
+    }
+
+    burgerMenu('.burger-menu');
