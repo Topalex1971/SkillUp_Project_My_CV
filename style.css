@@ -133,7 +133,7 @@ h1,h2{
 .span-shadow span {
   display: inline-block;
   text-transform: uppercase;
-    letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
   margin: 1rem;
   padding: 1rem 1.5rem;
   cursor: pointer;
@@ -293,8 +293,41 @@ tr{
     background-color: rgb(84, 101, 172);
     color: rgb(255, 255, 255);
 }
-
-
+/*------ Botton WE-PROGRAMMING - to GitHub----*/
+.cv-testing {text-align:center}
+.cv-testing span {
+  display: inline-block;
+  /*text-transform: uppercase;*/
+  margin: 1rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.9rem;
+  color: white;
+  transition: .2s linear;
+}
+.cv-testing span:nth-child(1) {background:rgb(84, 101, 172)}
+.cv-testing span:nth-child(1):hover {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.2rem rgb(84, 101, 172);
+}
+.cv-testing span:nth-child(2) {background:#C1F1E4}
+.cv-testing span:nth-child(2):hover { 
+  box-shadow: 12rem 0 0 0 rgba(0,0,0,.3) inset;
+}
+.cv-testing span:nth-child(3) {background:rgb(84, 101, 172)}
+.cv-testing span:nth-child(3):hover {
+  box-shadow: 0 0 0 0.2rem rgb(84, 101, 172) inset, 0 0 0 2.2rem white inset;
+}
+.cv-testing span:nth-child(4) {
+  background: rgb(84, 101, 172);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.cv-testing span:nth-child(4):hover {
+  box-shadow: 0.2rem 0.2rem white, 2.2rem 2.2rem rgb(84, 101, 172);
+  top: -0.2rem;
+  left: -0.2rem;
+}
 
 .container_languges h5{
 margin-left: 1rem;
