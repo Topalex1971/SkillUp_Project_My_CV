@@ -68,12 +68,13 @@ ul li{
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
-  /* Add a red background color to navbar links on hover */
+  /*----- Add a red background color to navbar links on hover ------*/
+  
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(145, 162, 229); /*rgb(145, 162, 229);*/
   }
   
-  /* Dropdown content (hidden by default) */
+  /*---- Dropdown content (hidden by default) -----*/
   .dropdown-content {
     display: none;
     position: absolute;
@@ -85,7 +86,7 @@ ul li{
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
+  /*---- Links inside the dropdown -----*/
   .dropdown-content a {
     float: none;
     color: white;
@@ -187,9 +188,9 @@ h1,h2{
     margin-left: auto;
     margin-right: auto;
 }
-.network{
+/*.network{
     margin: 1rem 2rem 0 0;
-}
+}*/
 .contact p{
     margin: 0;
 }
@@ -197,27 +198,6 @@ h1,h2{
     margin: 0;
 }
 
-
-/*.network_path{
-    display: flex;
-    flex-direction: row;
-    margin: 0 0 1.5rem 0;
-    justify-content: center;
-}
-.network_path p{
-    margin: 0;
-}
-.network_path img{
-        margin: 0;
-        width: 6vw;
-        height: 4vh;
-        padding: 0;
-}
-.linked, .gh {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin: 0;
-}*/
 /* ----------icons svg ------------- */
 
 .net-container{
@@ -241,11 +221,11 @@ h1,h2{
 }
 
 .icon-gi :hover{
-  fill: rgb(84, 101, 172);;
+  fill: rgb(84, 101, 172);
     
 }
 .icon-li :hover{
-    fill: rgb(84, 101, 172);;
+    fill: rgb(84, 101, 172);
 }
 
 .network-list li {
@@ -253,7 +233,6 @@ h1,h2{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    
     text-align: center;
 }
 
@@ -293,7 +272,7 @@ tr{
     background-color: rgb(84, 101, 172);
     color: rgb(255, 255, 255);
 }
-/*------ Botton WE-PROGRAMMING - to GitHub----*/
+/*------ Button WE-PROGRAMMING - to GitHub----*/
 .cv-testing {text-align:center}
 .cv-testing span {
   display: inline-block;
@@ -573,12 +552,6 @@ footer ul {
         margin-left: auto;
         margin-right: auto;
     } 
-    .network_path img{
-        margin: 0;
-        width: 5.5vw;
-        height: 3.5vh;
-        padding: 0;
-    }
     .container{
         display: flex;
         flex-direction: row;
@@ -624,7 +597,7 @@ footer ul {
         
     }
     
-        .form-value input{
+    .form-value input{
         width: 35vw;
     }
     
@@ -723,12 +696,6 @@ footer ul {
         margin-left: auto;
         margin-right: auto;
     } 
-    .network_path img{
-        margin: 0;
-        width: 4vw;
-        height: 3vh;
-        padding: 0;
-    }
     .container_languges{
         display: flex;
         flex-direction: row;
@@ -853,12 +820,6 @@ footer ul {
         margin-left: auto;
         margin-right: auto;
     } 
-    .network_path img{
-        margin: 0;
-        width: 3vw;
-        height: 4vh;
-        padding: 0;
-    }
     .container_languges{
         display: flex;
         flex-direction: row;
@@ -985,13 +946,6 @@ footer ul {
         justify-content: center;
     }
 
-    .network_path img{
-        margin: 0;
-        width: 3vw;
-        height: 2vh;
-        padding: 0;
-    }
-    
     .container_languges{
         display: flex;
         flex-direction: row;
@@ -1103,13 +1057,6 @@ footer ul {
         width: 13.7rem;
     }
 
-        .network_path img{
-        margin: 0;
-        width: 2vw;
-        height: 4vh;
-        padding: 0;
-    }
-    
     .container{
         max-width: 60%;
         margin-left: auto;
