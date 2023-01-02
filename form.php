@@ -16,7 +16,7 @@ die('Invalid parameters');
 $host = 'alextop.mysql.tools';
 $dbName = 'alextop_topalex';
 $dbUserName = 'alextop_topalex1971';
-$password = 'TataSvetMoihOchey1971';
+$password = '....';
 $charset = 'utf8mb4';
 
 $dataSourceName = "mysql:host={$host};dbname={$dbName};charset={$charset}";
